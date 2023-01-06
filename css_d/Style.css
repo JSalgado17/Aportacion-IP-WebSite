@@ -1,0 +1,651 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap'); 
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+}
+
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo{
+    color: #327A88;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.tituloEstructura{
+    color: #327A88;
+    font-size: 35px;
+    text-align: center;
+   margin-bottom: auto;
+}
+
+header{
+    width: 100%;
+    height: 600px;
+    background: #bdc3c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(210, 29%, 24%, 0.619), hsla(204, 8%, 76%, 0.619)), url(../img/Oficinas.jpg);   /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(210, 29%, 24%, 0.619), hsla(204, 8%, 76%, 0.619)), url(../img/Oficinas.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.textos-header h1{
+    font-size: 50px;
+    color: #fff;
+    
+}
+
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-about-us{
+    width: 48%;
+}
+
+.sobre-nosotros .contenido-textos{
+    width: 48%;
+    padding: 75px 50px 0 0;
+}
+
+
+.contenido-textos h3{
+    margin-bottom: 15px;
+    color: #000000;
+}
+
+.contenido-textos h3 span{
+    background: #327A88;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 0.01px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 5px;
+}
+
+.contenido-textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+    
+}
+
+.contenido-textos a{
+    font-weight: 300;
+    text-align: justify;
+    text-decoration: none;
+    color: #4654e9;
+   
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+header  figure img{
+    width: 115px;    
+    }
+
+header .logo{
+    font-weight: bolder;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+header .navbar ul{
+   list-style: none;
+   text-decoration: none;
+}
+
+header .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+header .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #fff;
+    display: block;
+    text-decoration: none;
+}
+
+header .navbar ul li a:hover{
+    background: #3e8593 ;
+    color: #fff;
+}
+
+header .navbar ul li ul{
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: #327A88;
+}
+
+header .navbar ul li ul li{
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0,.1);
+}
+
+.navbar-estilo {
+    --bs-bg-opacity: 1;
+    background-color: #327A88;
+    color: #fff;
+}
+a.nav-link {
+    color: #fff;
+}
+a.dropdown-item{
+    color: #fff;
+    background-color: #327A88;
+}
+
+ul.dropdown-menu.show{
+    background-color: #327A88;
+}
+
+
+
+.Contenido {
+    height: 75%;
+}
+
+.title{
+    text-align: center;
+    font-size: 40px;
+    color: #6a6a6a;
+    margin-top: 15px;
+    font-weight: 20;
+}
+
+.titleInfo{
+    text-align: center;
+    font-size: 40px;
+    color: #000000;
+    margin-top: 15px;
+    font-weight: 20;
+
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.container .card{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+   
+}
+
+.container .card:hover{
+ transform: translateY(-15px);
+ box-shadow:0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container .card img{
+    width: 330px;
+    height: 220px;
+}
+
+.container .card h4{
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.container .card h5{
+    margin-top: 14px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.card-contenido{
+ margin-top: 0px;
+ margin-bottom: 1px;
+ padding: 15px;
+}
+.container .card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.container .card a{
+    font-weight: 500;
+    text-decoration: none;
+    color: #3498db;
+}
+
+.pie-pagina{
+   
+    width: 100%;
+    height: 5%;
+    background-color: #327A88;
+}
+
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img{
+width: 250px;    
+}
+
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #3e8593;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+
+.pie-pagina .grupo-2{
+    background-color:#3e8593 ;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+
+@media screen and (max-width:800px) {
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+
+    .Informacion{
+        max-width: 1200px;
+        height: 100%;
+        display: inline-block;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+        
+    }
+    .Informacion .Boxe{
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        margin-top: 20px;
+        text-align: center;
+        transition: all 0.25s;
+        display: block;
+    }
+
+}
+    
+@media screen and (max-width:800px) {
+    .container{
+        width: 100%;
+        max-width: 1200px;
+        height: 430px;
+        display: inline-block;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .container .card{
+        width: 330px;
+        height: 430px;
+        border-radius: 8px;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        margin: 20px;
+        text-align: center;
+        transition: all 0.25s;
+        display: block;
+    }
+
+    .general .encabezado{
+        justify-content: center;
+        text-align: center;
+    }
+
+    .general{
+        width: 90%;
+        height: 100%;
+        display: inline-block;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+    }
+
+
+     .general .Vision{
+        float: none;
+        width: 100%;
+        margin-block: auto;
+        height: 100%;
+        padding: 0 0 0 0;
+        margin: 0 0 20px 15%;
+        overflow: hidden;
+        text-align: center;
+        transition: all 0.25s;
+        display: block;
+    }
+    
+     .general .Mision{
+        height: 100%;
+        width: 100%;
+        border-radius: 8px;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        margin: 0 0 20px 15%;
+        text-align: center;
+        transition: all 0.25s;
+        display: block;
+    }
+
+    .general .Valores{
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        margin: 0 0 20px 15%;
+        text-align: center;
+        transition: all 0.25s;
+        display: block;
+    }
+
+
+
+
+}
+
+@media screen and (max-width:900px) {
+    header{
+        background-position: center;
+
+    }
+
+    .contenedor-sobre-nosotros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .sobre-nosotros .contenido-textos{
+        width: 90%;
+
+    }
+
+    .imagen-about-us{
+        width: 90%;
+    }
+
+}
+
+
+@media(min-width:1024px)
+{
+    .Informacion{
+        margin: auto;
+    }
+
+    .Boxe p{
+        line-height: 40px;
+    }
+
+}
+
+
+.row{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 99%;
+    margin-bottom: 15px;
+}
+
+aside{
+    flex: 100px;
+    background-color: hsla(0, 4%, 95%, 0.452);
+    padding: 20px;
+    margin-left: 25px ;
+    color: rgb(0, 0, 0);
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    text-align: justify;
+}
+
+aside h2{
+    color: #327A88;
+}
+
+.Informacion h2{
+    color: #327A88;
+}
+.Informacion{
+    flex: 10%;
+    background-color: hsla(0, 4%, 95%, 0.452);
+    padding: 20px;
+    margin-left: 25px;
+    color: rgb(0, 0, 0);
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    text-align: justify;
+}
+
+@media screen and (max-width:700px){
+    .row{
+        flex-direction: column;
+        width: 98%;
+    }
+  
+    aside{
+       
+        text-align: justify;
+        margin-bottom: 1rem;
+        margin-left: 18px;
+    }
+    .Informacion{
+        
+        margin-left: 0px;
+        text-align: justify;
+        margin-left: 18px;
+    }
+
+    h1.linea-titulo
+    {
+        margin-left: 0;
+    }
+}
+
+h1.linea-titulo{
+   
+   position: relative;
+   text-align: center;
+   color: #327A88;
+}
+
+h1::after,h1::before{
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 3px;
+    background-color: currentColor;
+    top: 0.6em;
+    transform: scale(0);
+    transition: all 0.2s ease-in;
+}
+
+h1:hover::before,h1:hover::after{
+    transform: scale(1);
+}
+
+h1::before{
+    left: 33.5%;
+}
+
+h1::after{
+    right: 33.5%;
+}
+
+.Organigrama{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.Organigrama figure{
+    position: relative;
+    height: 750px;
+    width: 550px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, .50);
+    cursor: pointer;
+}
+
+.Organigrama figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.Organigrama figure .Capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(11, 103, 123, 0.6);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.Organigrama figure:hover > .Capa{
+opacity: 1;
+visibility: visible;
+}
+.Organigrama figure:hover > img{
+   transform: scale(1.3);
+    }
+
+.Organigrama figure:hover > .Capa h3{
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+
+.Organigrama figure .Capa h3{
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top: 30px;
+}
+
+.Organigrama figure .Capa p{
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}
+

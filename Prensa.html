@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<htm lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Inicio</title>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1">
+        <link rel="stylesheet" href="../css_d/estilos.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <!--Iconos-->
+        <script src="https://kit.fontawesome.com/ed263d3dd2.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+    <nav class="navbar navbar-estilo  navbar-expand-lg ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../img/Nuevo_Logo_IP_2022_Blanco.png" width="115px" >
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu" >
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="./index.html" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="./Institucion.html" class="nav-link">Institucion</a></li>
+                    <li class="nav-item"><a href="./QuienesSomos.html" class="nav-link">Quienes Somos</a></li>
+                    <li class="nav-item"><a href="./Prensa.html" class="nav-link">Prensa</a></li>
+                    <li class="nav-item"><a href="./Departamentos.html" class="nav-link">Departamentos</a></li>
+                    <li class="nav-item"><a href="./Contactanos.html" class="nav-link">Contactanos</a></li>  
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <div class="Galeria">
+        <h1 class="TituloPrensa">Prensa</h1>
+        <div class="image-galeria">
+            <div class="image"><img src="./img/Prensa1.jpg" alt=""></div>
+            <div class="image"><img src="./img/Prensa2.jpg" alt=""></div>
+            <div class="image"><img src="./img/Prensa3.jpg" alt=""></div>
+            <div class="image"><img src="./img/Prensa4.jpg" alt=""></div>
+            <div class="image"><img src="./img/Prensa5.jpg" alt=""></div>
+            <div class="image"><img src="./img/Prensa6.jpg" alt=""></div>
+       
+        </div>
+
+        <div class="popup-image">
+            <span>&times;</span>
+            <img src="./img/Prensa1.jpg" alt="">
+        </div>
+
+    </div>
+
+    <script>
+        document.querySelectorAll('.image-galeria img').forEach(image=>{
+            image.onclick = () =>{
+            document.querySelector('.popup-image').style.display = 'block';
+            document.querySelector('.popup-image img').src = image.getAttribute('src');
+        }
+        });
+
+        document.querySelector('.popup-image span').onclick = () =>{
+            document.querySelector('.popup-image').style.display = 'none';
+        }
+
+    </script>
+
+    <div class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="../img/Nuevo_Logo_IP_2022_Blanco.png" alt="Logo">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Centro Cívico Gubernamental, Tegucigalpa MDC, Honduras, C.A.</p>
+                <p>Contact Center (504)2240-1500 Horario 8:00 a.m. a 4:00 p.m.</p>
+                <p> info@ip.gob.hn</p>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="https://www.facebook.com/institutodelapropiedadhn" target="_blank"
+                        class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com/institutodelapropiedad_hn/" target="_blank"
+                        class="fa fa-instagram"></a>
+                    <a href="https://twitter.com/ip_hond?ref_src=twsrc%5Etfw%7Ctwcamp%5Eembeddedtimeline%7Ctwterm%5Eprofile%3Aip_hond&ref_url=http%3A%2F%2F20"
+                        target="_blank" class="fa fa-twitter"></a>
+                    <a href="https://www.youtube.com/channel/UCsQIdvcSRixupWe487Rf5aw" target="_blank"
+                        class="fa fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2021 <b>Instituto de la Propiedad</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </div>
+    
+</body>
+</html>
